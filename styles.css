@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Poppins';
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #091921;
+}
+
+#passVBox {
+    position: relative;
+    display: grid;
+}
+
+#passVBox #passInput{
+    grid-column: span 4;
+    height: 100px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#passInput {
+    outline: none;
+    text-align: center;
+    font-size: xx-large;
+    height: 90px;
+    width: 370px;
+    position: fixed;
+    left: 37%;
+    top: 13%;
+}
+
+label {
+    display: block;
+    font-size: 30px;
+    color: #000047;
+}
+
+#passInput::placeholder {
+    overflow-x: hidden;
+}
+
+#passVBox span {
+    cursor: pointer;
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+#passVBox span:hover{
+    background-color: #fcff50;
+    color: darkblue;
+}
+
+#passVBox a {
+    text-decoration: none;
+}
+
+#one {
+    position: fixed;
+    top: 26.4%;
+    left: 40%;
+    margin-left: 1px;
+}
+
+#two {
+    position: fixed;
+    top: 26.4%;
+    left: 44.1%;
+    margin-left: 10px;
+}
+
+#three {
+    position: fixed;
+    top: 26.4%;
+    left: 48.2%;
+    margin-left: 18px;
+}
+
+#four {
+    position: fixed;
+    top: 26.4%;
+    left: 52.3%;
+    margin-left: 25px;
+}
+
+#five {
+    position: fixed;
+    top: 36.4%;
+    left: 40%;
+    margin-left: 1px;
+}
+
+#six {
+    position: fixed;
+    top: 36.4%;
+    left: 44.1%;
+    margin-left: 10px;
+}
+
+#seven {
+    position: fixed;
+    top: 36.4%;
+    left: 48.2%;
+    margin-left: 18px;
+}
+
+#eight {
+    position: fixed;
+    top: 36.4%;
+    left: 52.3%;
+    margin-left: 25px;
+}
+
+#nine {
+    position: fixed;
+    top: 46.4%;
+    left: 44.1%;
+    margin-left: 10px;
+}
+
+#zero {
+    position: fixed;
+    top: 46.4%;
+    left: 48.2%;
+    margin-left: 18px;
+}
+
+#clear {
+    position: fixed;
+    top: 46.4%;
+    left: 39.5%;
+    margin-left: 10px;
+}
+
+#submit {
+    position: fixed;
+    top: 46.4%;
+    left: 52.3%;
+    margin-left: 25px;
+}

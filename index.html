@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation | SCS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="allElementsParent">
+    <div id="passVBox">
+        <input type="text" placeholder="Enter a 8-digit password" id="passInput">
+        <span onclick="giveInputAs1()" id="one">1</span>  <!-- 1 -->
+        <span onclick="giveInputAs2()" id="two">2</span>  <!-- 2 -->
+        <span onclick="giveInputAs3()" id="three">3</span>  <!-- 3 -->
+        <span onclick="giveInputAs4()" id="four">4</span>  <!-- 4 -->
+        <span onclick="giveInputAs5()" id="five">5</span>  <!-- 5 -->
+        <span onclick="giveInputAs6()" id="six">6</span>  <!-- 6 -->
+        <span onclick="giveInputAs7()" id="seven">7</span>  <!-- 7 -->
+        <span onclick="giveInputAs8()" id="eight">8</span>  <!-- 8 -->
+        <span onclick="giveInputAs9()" id="nine">9</span>  <!-- 9 -->
+        <span onclick="giveInputAs0()" id="zero">0</span>  <!-- 0 -->
+
+        <span onclick="giveInputAsNull()" id="clear">Clear</span>
+
+       <span id="submit" onclick="giveAlert();">Submit</span><br><br><br><br><br><br>  <!-- Span for submitting the password -->
+       <label></label>
+    </div>
+</body>
+<script type="text/javascript">
+    function giveInputAs1() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "1";
+    }
+
+    function giveInputAs2() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "2";
+    }
+
+    function giveInputAs3() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "3";
+    }
+
+    function giveInputAs4() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "4";
+    }
+
+    function giveInputAs5() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "5";
+    }
+
+    function giveInputAs6() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "6";
+    }
+
+    function giveInputAs7() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "7";
+    }
+
+    function giveInputAs8() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "8";
+    }
+
+    function giveInputAs9() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "9";
+    }
+
+    function giveInputAs0() {
+        var passwordInput = document.getElementById("passInput");
+        var currentValue = passwordInput.value;
+        passwordInput.value = currentValue + "0";
+    }
+
+    function giveInputAsNull(){
+        var passwordInput = document.getElementById("passInput");
+        var label = document.querySelector("label");
+        var bodyUseful = document.getElementById("allElementsParent");
+        var currentValue = passwordInput.value;
+        passwordInput.value = null;
+        bodyUseful.style.backgroundColor = "#091921";
+        label.innerHTML = "";
+    }
+
+    function giveAlert() {
+        var passwordInput = document.getElementById("passInput");
+        var bodyUseful = document.getElementById("allElementsParent");
+        var label = document.querySelector("label");
+        if (passwordInput.value === "9721") {
+            bodyUseful.style.backgroundColor = "#00da00"; 
+            label.innerHTML = "Correct Password";    
+            window.location.href = "main.html";
+        } else {                                
+            bodyUseful.style.backgroundColor = "#e00000";
+            label.innerHTML = "Wrong Password";
+        }
+    }
+</script>
+</html>
